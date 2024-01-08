@@ -1,0 +1,325 @@
+body {
+    overflow-x: hidden;
+} 
+header {
+    background-color: rgb(243, 243, 243);
+    height: 25px;
+    position: static;
+    border: 2px solid black;
+}
+.contact-menu {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        list-style: none;
+        margin: 0px;
+        position: relative;
+        left: 900px;
+}
+.contact-item {
+    padding: 4px;
+    display: inline;
+    margin-right: 30px;
+}
+.contact-link {
+    text-decoration: none;
+    color: #333;
+}
+.link-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    margin: 0px;
+    position: relative;
+    left: 1350px;
+    bottom: 18px;
+}
+.link-item {
+    display: inline;
+    padding:50px;
+}
+.link-contact {
+    text-decoration: none;
+    color: #333;
+}
+.logo {
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+}
+.header-main {
+    background-color: rgb(212, 212, 212);
+    height: 150px;
+    margin: 0px;
+}
+.search-menu {
+    position: relative;
+    left: 600px;
+    bottom: 70px;
+    width: 600px;
+    height: 50px;
+    font-size: larger;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search-button {
+    position: relative;
+    bottom: 70px;
+    left: 550px;
+}
+.main-menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    position: relative;
+    left: 1300px;
+    bottom: 110px;
+}
+.main-item {
+    padding: 30px;
+    display: inline;
+    margin-right: 30px;
+}
+.main-link {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+.slider {
+    position: relative;
+    top: 160px;
+    background-color: rgb(170, 169, 167);
+    height: 250px;
+    border: 2px solid black;
+}
+.t-shirt {
+    padding: 50px;
+}
+.goods {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;    
+}
+.title {
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    right: 40px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+.goods-categorys {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #a3a3a3;
+    display: flex;
+    margin: 0;
+    padding: 40px;
+    list-style: none;
+}
+.goods-item {
+    position: relative;
+}
+.goods-item:hover > .goods-subcategorys {
+    display: block;
+}
+.goods-link {
+    display: block;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+}
+.goods-link:hover {
+    background-color: #ffffff;
+}
+.goods-subcategorys {
+    display: none;
+    min-width: 100;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.goods-sublink {
+    display: block;
+    padding: 8px 16px;
+    background-color: #afafaf;
+    color: #000000;
+    text-decoration: none;
+}
+.goods-sublink:hover {
+    background-color: #444;
+}
+.advantages {
+    display: flex;
+    position: relative;
+    top: 800px;
+    justify-content: center;
+    list-style: none;
+}
+.advantages-item {
+    padding: 20px;
+    width: 220px;
+    height: 220px;
+}
+.advantages-title {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.advantages-icon {
+    position: relative;
+    left: 60px;
+}
+.advantages-text {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    left: 15px;
+    position: relative;
+}
+
+#myBtn {
+    background-color: #333;
+    color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    position: relative;
+    top: 700px;
+    left: 830px;
+  }
+  
+  
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  
+  .modal-content {
+      position: relative;
+      background-color: #918888;
+      margin: auto;
+      padding: 0;
+      border: 5px solid #333;
+      width: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+  }
+  
+  
+  @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+  }
+  
+  
+  .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .modal-header {
+      padding: 2px 16px;
+      background-color: #333;
+      color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+      padding: 2px 16px;
+      background-color: #333;
+      color: white;
+  }
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Добавить значок поиска для ввода */
+    background-position: 10px 12px; /* Расположите значок поиска */
+    background-repeat: no-repeat; /* Не повторяйте изображение значка */
+    width: 100%; /* Полная ширина */
+    font-size: 16px; /* Увеличить размер шрифта */
+    padding: 12px 20px 12px 40px; /* Добавить немного отступов */
+    border: 1px solid #ddd; /* Добавить серую границу */
+    margin-bottom: 12px; /* Добавить некоторое пространство под входом */
+    position: relative;
+    top: 180px;
+  }
+  
+  #myUL {
+    /* Удалить стиль списка по умолчанию */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 170px;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Добавить границу для всех ссылок */
+    margin-top: -1px; /* Предотвращение двойных границ */
+    background-color: #f6f6f6; /* Серый цвет фона */
+    padding: 12px; /* Добавить немного отступов */
+    text-decoration: none; /* Удалить подчеркивание текста по умолчанию */
+    font-size: 18px; /* Увеличьте размер шрифта */
+    color: black; /* Добавить черный цвет текста */
+    display: block; /* Сделайте его в элемент блока, чтобы заполнить весь список */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Добавить эффект наведения на все ссылки, кроме заголовков */
+  }
+  .container-product {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    bottom: 300x;
+    left: 500px;
+    width: 1000px;
+    height: 500px;
+    justify-content: space-around;
+  }
+form {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 800px;
+    top: 150px;
+}
