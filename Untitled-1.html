@@ -8,11 +8,10 @@
     <link rel="shortcut icon" href="src/favicon.png" type="image/png">
 </head>
 <header>
-    <form>
-        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus> 
-        <input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
-        <input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
-  </form>  
+    <div class="container">
+        <!-- input -->
+         <input id="search" type="text" placeholder="Search or price..."/>
+       </div>  
     <ul class="contact-menu">
         <li class="contact-item">
             <a class="contact-link" href="#">О компании</a>
@@ -72,7 +71,7 @@
   </div>
 
 </div>
-    <div class="slider">
+    <div class="slider-product">
         <marquee behavior="alternate" direction="right" scrollamount="5">
             <img class="t-shirt" height="150" width="150" src="src/t-shirt-1.png" alt="футболка 1">
             <img class="t-shirt" height="150" width="150" src="src/t-shirt-2.png" alt="футболка 2">
@@ -82,7 +81,7 @@
             <img class="t-shirt" height="200" width="200" src="src/t-shirt-6.png" alt="футболка 6">
         </marquee>
     </div>
-<h1 class="title">Топ категорий</h1>
+<h1 class="title-goods">Топ категорий</h1>
  <div class="goods">
         <ul class="goods-categorys">
             <li class="goods-item">
@@ -197,19 +196,97 @@
         </li>
     </ul>
  </div>
-<div id="containerProduct" class="container-product">
-    <img class="wrapper-product1" id="wrapperProduct1" width="200" height="200" src="src/product1.jpg">
-    <p id="productTitle1" class="product-title1>">Белая футболка</p>
-    <p id="productPrice1" class="product-price1">Цена: 2500 тг</p>
-    <img class="wrpaper-product2" id="wrapperProduct2" width="200" height="200" src="src/product2.jpg">
-    <p id="productTitle2" class="product-title2">Красная футболка</p>
-    <p id="productPrice2" class="product-price2">Цена: 1000 тг</p>
-    <img class="wrapper-product3" id="wrapperProduct3" width="200" height="200" src="src/product3.jpg">
-    <p id="productTitle3" class="product-title3">Жёлтая футболка</p>
-    <p id="productPrice3" class="product-price3">Цена: 1500 тг</p>
+<div class="container-product">
+    <h1 class="title">Фильтр товаров</h1>
+    <ul class="list">
+        <li class="list-item active" data-id="all">ВСЕ ТОВАРЫ</li>
+        <li class="list-item" data-id="white">БЕЛАЯ ФУТБОЛКА</li>
+        <li class="list-item" data-id="re">КРАСНАЯ ФУТБОЛКА</li>
+        <li class="list-item" data-id="yellow">ЖЁЛТАЯ ФУТБОЛКА</li>
+        <li class="list-item" data-id="black">ЧЁРНАЯ ФУТБОЛКА</li>
+        <li class="list-item" data-id="orange">ОРАНЖЕВАЯ ФУТБОЛКА</li>
+    </ul>
+    <div class="blocks"></div>
+    <div class="blocks-row">
+        <div class="blocks-item t-shirt white"><span>Белая футболка</span></div>
+        <div class="blocks-item t-shirt red"><span>Красная футболка</span></div>
+        <div class="blocks-item t-shirt yellow"><span>Жёлтая футболка</span></div>
+        <div class="blocks-item t-shirt black"><span>Чёрная футболка</span></div>
+        <div class="blocks-item t-shirt orange"><span>Оранжевая футболка</span></div>
+    </div>
 </div>
+<section class="products">
+    <div class="main-wrapper"> 
+    <div class="container-products">
+
+         <div class="product">
+           <div class="image">
+             <img src="src/product2.jpg" alt="Красная футболка" class="product-img">
+           </div>
+           <div class="info">
+             <h3 class="for-search">Красная футболка</h3>
+             <ul class="rathing">
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-outline"></ion-icon></li>
+             </ul>
+             <div>
+             <div class="info-price">    
+             <span class="price">3000<small>тг.</small></span>
+             <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+             </div>
+             </div>  
+           </div>
+           
+         </div>
+         
+         <div class="product">
+           <div class="image">
+             <img src="src/product1.jpg" alt="белая футболка" class="product-img">
+           </div>
+           <div class="info">
+             <h3 class="for-search">Белая футболка</h3>
+             <ul class="rathing">
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-sharp"></ion-icon></li>
+               <li><ion-icon name="star-outline"></ion-icon></li>
+             </ul>
+             <div>
+             <div class="info-price">    
+             <span class="price">3500<small>тг.</small></span>
+             <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+             </div>
+             </div>  
+           </div>
+           
+         </div>
+         
+    </div>
+   </div>
+   <input type="text" id="elastic">
+
+    <div class="card">
+        <div class="card2">
+         <span>Black</span>   
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card2">
+            <span>Red</span>
     
-</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card2">
+            <span>White</span>
+    
+        </div>
+    </div>
     <script src="main.js"></script>
     
 </body>

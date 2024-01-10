@@ -56,3 +56,46 @@ function FindOnPage(name, status) {
         if(status) { FindOnPageBack(); FindOnPageGo(); } //чистим прошлое и Выделяем найденное
 	if(!status) { FindOnPageBack(); } //Снимаем выделение
 }
+//get input
+let input = document.getElementById("search");
+//get list of value
+let list = document.querySelectorAll(".product ");
+
+
+
+//function search on the list.
+function search (){
+  for(let i = 0; i < list.length; i += 1){
+    
+   //check if the element contains the value of the input
+   if(list[i].innerText.toLowerCase().includes(input.value.toLowerCase())){
+     list[i].style.display = "block";
+   }else{
+     list[i].style.display = "none";
+   }
+  }
+}
+
+//to the change run search.
+input.addEventListener('input', search);
+document.querySelector('#elastic').oninput = function () {
+	let val = this.value.trim();
+	let elasticItems = document.querySelectorAll('.card div');
+	if (val != '') {
+		elasticItems.forEach(function (elem) {
+			if (elem.innerText.search((RegExp(val,"gi"))) == -1) {
+				elem.classList.add('hide');
+			}
+			else {
+				elem.classList.remove('hide');
+			}
+		});
+	}
+	else {
+		  elasticItems.forEach(function (elem) {
+		   
+				elem.classList.remove('hide');
+			
+		  });
+	}
+}

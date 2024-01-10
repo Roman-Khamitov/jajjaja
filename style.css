@@ -83,7 +83,7 @@ header {
     text-decoration: none;
     color: #333;
 }
-.slider {
+.slider-product {
     position: relative;
     top: 160px;
     background-color: rgb(170, 169, 167);
@@ -99,7 +99,7 @@ header {
     display: flex;
     justify-content: center;    
 }
-.title {
+.title-goods {
     position: relative;
     top: 160px;
     display: flex;
@@ -159,7 +159,7 @@ header {
 .advantages {
     display: flex;
     position: relative;
-    top: 800px;
+    top: 2000px;
     justify-content: center;
     list-style: none;
 }
@@ -323,3 +323,51 @@ form {
     left: 800px;
     top: 150px;
 }
+.product-list {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    list-style: none;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+    bottom: 50px;
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+.blocks-row {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    width: 150px;
+    height: 120px;
+    border:1px solid black;
+    margin: 10px;
+    
+}
+.card2 {
+    width: 50px;
+    height: 20px;
+    border:1px solid red;
+    
+}
+
+.card .hide{
+   display: none; 
+}
+
+  
